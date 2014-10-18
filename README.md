@@ -1,7 +1,7 @@
 Description
 ===========
 
-Installs and configures nosh - a suite of system-level utilities for initializing and running a BSD or Linux system, and for managing daemons. See the [[upstream],http://homepage.ntlworld.com/jonathan.deboynepollard/Softwares/nosh.html] website for more details.
+Installs and configures nosh - a suite of system-level utilities for initializing and running a BSD or Linux system, and for managing daemons. See the [upstream](http://homepage.ntlworld.com/jonathan.deboynepollard/Softwares/nosh.html) website for more details.
 
 Requirements
 ============
