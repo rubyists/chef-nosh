@@ -29,13 +29,15 @@ unless File.exists?(File.join(node['nosh']['prefix'],"bin","nosh"))
     to "/usr/local/package"
   end
 
-  remote_file "/package/nosh-#{node['nosh']['version']}.tar.bz2" do
+  tarball = "nosh-#{node['nosh']['version']}.tar.bz2"
+
+  remote_file "/package/#{tarball}" do
     source node['nosh']['source_url']
   end
 
   bash "extract_nosh" do
     cwd "/package"
-    code "tar xjf nosh.tar.bz2"
+    code "tar xjf #{tarball}"
     not_if { File.directory?("/package/nosh") }
   end
 
